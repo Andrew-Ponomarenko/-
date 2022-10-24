@@ -25,6 +25,23 @@ if (len % 2) == 1:#check odd
 else:
     f.write("Median = "+str((datarray[int(len/2)]+datarray[int(len/2+1)])/2))
 largestCount = 0
+tempfreqarray = datarray
+f.write("\ntable of frequencies:\n")
+j=0
+for i in range(len):
+        if j == 0:
+            f.write(str([tempfreqarray[i],count_nonzero(tempfreqarray==tempfreqarray[i])])+"\n")
+            j = count_nonzero(tempfreqarray==tempfreqarray[i])
+        j = j - 1
+f.write("\ntable of cumulative frequencies:\n")
+j=0
+s=0
+for i in range(len):
+        if j == 0:
+            s = count_nonzero(tempfreqarray==tempfreqarray[i]) + s
+            f.write(str([tempfreqarray[i],s])+"\n")
+            j = count_nonzero(tempfreqarray==tempfreqarray[i])
+        j = j - 1
 for i in range(len):#custom function for finding mode
         count = count_nonzero(datarray==datarray[i])
         if(count > largestCount):
