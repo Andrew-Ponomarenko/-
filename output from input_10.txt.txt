@@ -1,4 +1,4 @@
-Median = 39
+Median = 12
 table of frequencies:
 [1, 3]
 [10, 1]
@@ -16,6 +16,6 @@ table of cumulative frequencies:
 [97, 10]
 
 mode = 1
-dispersion = 0.979591836735
 standard deviation = 37.28106460091742
+variation = 1389.87777778
 quartile deviation = 32.5

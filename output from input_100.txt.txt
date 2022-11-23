@@ -1,4 +1,4 @@
-Median = 541
+Median = 532
 table of frequencies:
 [22, 4]
 [46, 2]
@@ -182,6 +182,6 @@ table of cumulative frequencies:
 [999, 100]
 
 mode = 22
-dispersion = 0.956904995103
 standard deviation = 299.8528656026168
+variation = 89911.7410101
 quartile deviation = 287.0
